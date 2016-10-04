@@ -4,9 +4,14 @@
 
 import sys
 
+def _sum(m, n):
+        if n==m:
+		return m
+	else:
+		return n + _sum(m, n-1)
+
+
 m = sys.argv(1)
 n = sys.argv(2)
-sum = 0
-for i in range(m, n):
-	sum += i
-print('Add '+ str(m)+ ' to '+ str(m) + ' is ' + str(sum))
+
+print('Add '+ str(m)+ ' to '+ str(n) + ' is ' + str(_sum(m, n)))
