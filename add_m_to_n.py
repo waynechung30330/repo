@@ -1,9 +1,11 @@
 # Add M to N
 # Usage: add_m_to_n.py <Integer m> <Integer n>
-# Now Status: Only compelet add one to n
+# Now Status: Compeleted
 import sys
 
+m = sys.argv(1)
+n = sys.argv(2)
 sum = 0
-for i in range(1,sys.argv(1)+1):
+for i in range(m, n):
 	sum += i
-print('Add 1 to '+ str(sys.argv(1)) + ' is ' + str(sum))
+print('Add '+ str(m)+ ' to '+ str(m) + ' is ' + str(sum))
